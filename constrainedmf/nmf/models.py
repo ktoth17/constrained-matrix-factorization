@@ -311,7 +311,7 @@ class NMFBase(nn.Module):
 
     def fit_transform(self, *args, **kwargs):
         self.fit(*args, **kwargs)
-        return self.W
+        return self.H, self.W
 
 
 class NMF(NMFBase):
